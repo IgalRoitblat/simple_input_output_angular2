@@ -6,6 +6,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './components/product/product.component';
 import { CartComponent } from './components/cart/cart.component';
 import { QuantitySelectorComponent } from './components/quantity-selector/quantity-selector.component';
+import { CartSumComponent } from './components/cart-sum/cart-sum.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { QuantitySelectorComponent } from './components/quantity-selector/quanti
     ProductsComponent,
     ProductComponent,
     CartComponent,
-    QuantitySelectorComponent
+    QuantitySelectorComponent,
+    CartSumComponent
   ],
   imports: [
     BrowserModule
