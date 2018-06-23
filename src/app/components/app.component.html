@@ -1,0 +1,7 @@
+<header>
+  <h1>Welcome to our store</h1>
+  <span>Click on a product to add to cart</span>
+</header>
+<app-cart [selected]="selectedProducts" [cartEmpty]="cartEmpty"></app-cart>
+<app-products [products]="productsList" (quantityCounter)="passQuantity($event)"></app-products>
+

@@ -1,0 +1,4 @@
+<div class="productList">
+	<app-product [product]="product" [index]="i" *ngFor="let product of products; index as i" (quantityCounter)="passQuantity($event)">
+	</app-product>
+</div>

@@ -1,0 +1,10 @@
+<div class="product-container">
+	<div class="product-info" (click)="showQuantityToggle()">
+		<span>Name: {{product.name}}</span>
+		<span>Price: {{product.price}}$</span>
+		<div class="product-image" [style.backgroundImage]="'url('+ product.image +')'">
+			
+		</div>
+	</div>
+	<app-quantity-selector *ngIf="showQuantity" (quantityCounter)="passQuantity($event)"></app-quantity-selector>
+</div>
